@@ -1,9 +1,159 @@
 # FEED MY PLANT
-Feed my plant i smart watering system for your plants to always stay hydrated in all time without needing your intervention! This project is the result of the collaboration of ... in partnership with Crtical software...
 
-## How to install
+**Feed My Plant** is a smart watering system that ensures your plants stay hydrated at all times without needing your intervention. This project is a collaborative effort by [Your Team/Organization] in partnership with Critical Software.
 
-## Hardware
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [How It Works](#how-it-works)
+3. [Hardware Requirements](#hardware-requirements)
+4. [Software Setup](#software-setup)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+5. [Docker Compose Services](#docker-compose-services)
+    - [Telegraf](#telegraf)
+    - [InfluxDB](#influxdb)
+    - [Grafana](#grafana)
+    - [Node-RED](#node-red)
+    - [Mosquitto](#mosquitto)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
+8. [License](#license)
 
-## How does it work
+## Project Overview
 
+**Feed My Plant** automates the watering process for your plants, ensuring they receive the right amount of water based on various environmental factors. The system uses sensors to monitor soil moisture and other parameters, triggering the watering process as needed.
+
+## How It Works
+
+The system consists of several interconnected services running in Docker containers:
+- **Telegraf** collects data from sensors.
+- **InfluxDB** stores the collected data.
+- **Grafana** provides a dashboard for visualizing the data.
+- **Node-RED** manages the logic and workflows.
+- **Mosquitto** acts as an MQTT broker for communication between components.
+
+## Hardware Requirements
+
+To set up the **Feed My Plant** system, you will need the following hardware:
+- Soil moisture sensors
+- A microcontroller (e.g., Arduino, Raspberry Pi)
+- Water pump
+- Tubing and connectors
+- Power supply
+- Networking equipment (e.g., Wi-Fi router)
+
+## Software Setup
+
+### Prerequisites
+
+Before setting up the software, ensure you have the following installed on your machine:
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Installation
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/yourusername/feed-my-plant.git
+    cd feed-my-plant
+    ```
+
+2. **Prepare Configuration Files**:
+    - Ensure your configuration files (e.g., `telegraf.conf`, `mosquitto.conf`) are in the `./data` directory.
+
+3. **Start the Docker Containers**:
+    ```sh
+    docker-compose up -d
+    ```
+
+## Docker Compose Services
+
+### Telegraf
+
+- **Image**: `telegraf`
+- **Container Name**: `telegraf`
+- **Ports**: `8125`
+- **Configuration**:
+    ```yaml
+    volumes:
+      - ./data/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    ```
+
+### InfluxDB
+
+- **Image**: `influxdb`
+- **Container Name**: `influxdb`
+- **Ports**: `8086`
+- **Environment Variables**:
+    ```yaml
+    environment:
+      - INFLUXDB_DB=influx
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=admin
+    ```
+- **Volumes**:
+    ```yaml
+    volumes:
+      - influxdb_data:/var/lib/influxdb
+    ```
+
+### Grafana
+
+- **Image**: `grafana/grafana`
+- **Container Name**: `grafana-server`
+- **Ports**: `3000`
+- **Environment Variables**:
+    ```yaml
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    ```
+- **Volumes**:
+    ```yaml
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ```
+
+### Node-RED
+
+- **Image**: `nodered/node-red:latest`
+- **Container Name**: `node-red`
+- **Ports**: `1880`
+- **Environment Variables**:
+    ```yaml
+    environment:
+      - NODE_RED_ENABLE_PROJECTS=true
+    ```
+- **Volumes**:
+    ```yaml
+    volumes:
+      - ./data/node-red:/data
+    ```
+
+### Mosquitto
+
+- **Image**: `eclipse-mosquitto:latest`
+- **Container Name**: `mosquitto`
+- **Ports**: `1883`
+- **Volumes**:
+    ```yaml
+    volumes:
+      - ./data/mosquitto/config:/mosquitto/config
+      - ./data/mosquitto/data:/mosquitto/data
+      - ./data/mosquitto/log:/mosquitto/log
+    ```
+
+## Usage
+
+Once the Docker containers are up and running:
+1. Access **Grafana** at `http://localhost:3000` to visualize sensor data.
+2. Access **Node-RED** at `http://localhost:1880` to manage and customize the automation workflows.
+3. Ensure **Telegraf**, **InfluxDB**, and **Mosquitto** are running and properly configured to collect and route data from your sensors.
+
+## Contributing
+
+We welcome contributions from the community. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get involved.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
