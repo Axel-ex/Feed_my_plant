@@ -1,6 +1,6 @@
-# FEED MY PLANT
+![Alt text](cover.png)
 
-**Feed My Plant** is a smart watering system that ensures your plants stay hydrated at all times without needing your intervention. This project is a collaborative effort by [Your Team/Organization] in partnership with Critical Software.
+**Feed My Plant** is a smart watering system that ensures your plants stay hydrated at all times based on environmental conditions without needing your intervention. This project is a collaborative effort by [Your Team/Organization] in partnership with Critical Software.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -9,38 +9,38 @@
 4. [Software Setup](#software-setup)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-5. [Docker Compose Services](#docker-compose-services)
+5. [Usage](#usage)
+6. [Docker Compose Services](#docker-compose-services)
     - [Telegraf](#telegraf)
     - [InfluxDB](#influxdb)
     - [Grafana](#grafana)
     - [Node-RED](#node-red)
     - [Mosquitto](#mosquitto)
-6. [Usage](#usage)
 7. [Contributing](#contributing)
 8. [License](#license)
 
 ## Project Overview
 
-**Feed My Plant** automates the watering process for your plants, ensuring they receive the right amount of water based on various environmental factors. The system uses sensors to monitor soil moisture and other parameters, triggering the watering process as needed.
+**Feed My Plant** automates the watering process for your plants, ensuring they receive the right amount of water based on various environmental factors. The system uses sensors to monitor rain and ambient conditions, triggering the watering process as needed.
 
 ## How It Works
 
 The system consists of several interconnected services running in Docker containers:
-- **Telegraf** collects data from sensors.
+- **Mosquitto** acts as an MQTT broker for communication between components (esp32 and docker network).
+- **Node-RED** manages the logic and workflows.
+- **Telegraf** consume mqtt message and send it to the database.
 - **InfluxDB** stores the collected data.
 - **Grafana** provides a dashboard for visualizing the data.
-- **Node-RED** manages the logic and workflows.
-- **Mosquitto** acts as an MQTT broker for communication between components.
 
 ## Hardware Requirements
 
 To set up the **Feed My Plant** system, you will need the following hardware:
-- Soil moisture sensors
-- A microcontroller (e.g., Arduino, Raspberry Pi)
-- Water pump
+- An ESP32
+- BME680, rain detector
+- Electrovalve
+- 12 volts relay
+- 12 volts transformator
 - Tubing and connectors
-- Power supply
-- Networking equipment (e.g., Wi-Fi router)
 
 ## Software Setup
 
@@ -58,13 +58,20 @@ Before setting up the software, ensure you have the following installed on your 
     cd feed-my-plant
     ```
 
-2. **Prepare Configuration Files**:
-    - Ensure your configuration files (e.g., `telegraf.conf`, `mosquitto.conf`) are in the `./data` directory.
+2. **Modify credentials**:
+
+    - Make sure to modify environment variable in the docker-compose.yml.
 
 3. **Start the Docker Containers**:
     ```sh
     docker-compose up -d
     ```
+## Usage
+
+Once the Docker containers are up and running:
+1. Access **Grafana** at `http://localhost:3000` to visualize sensor data.
+2. Access **Node-RED** at `http://localhost:1880` to manage and customize the automation workflows. Access the **Node-RED** UI at `http://localhost:1880/ui`.
+3. Ensure **Telegraf**, **InfluxDB**, and **Mosquitto** are running and properly configured to collect and route data from your sensors.
 
 ## Docker Compose Services
 
@@ -142,17 +149,6 @@ Before setting up the software, ensure you have the following installed on your 
       - ./data/mosquitto/data:/mosquitto/data
       - ./data/mosquitto/log:/mosquitto/log
     ```
-
-## Usage
-
-Once the Docker containers are up and running:
-1. Access **Grafana** at `http://localhost:3000` to visualize sensor data.
-2. Access **Node-RED** at `http://localhost:1880` to manage and customize the automation workflows.
-3. Ensure **Telegraf**, **InfluxDB**, and **Mosquitto** are running and properly configured to collect and route data from your sensors.
-
-## Contributing
-
-We welcome contributions from the community. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get involved.
 
 ## License
 
