@@ -1,0 +1,1217 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "Feed_my_plant",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "62abc6cc444574ce",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cb315992bd18be8c",
+            "b60962e1d678489c"
+        ],
+        "x": 14,
+        "y": 219,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "69d78f0595232264",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b66908be0b2a0a53",
+            "55190430a0261633"
+        ],
+        "x": 14,
+        "y": 99,
+        "w": 432,
+        "h": 82
+    },
+    {
+        "id": "84e9646b68c68be0",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c7b37d4e87f1ae64",
+            "50a5a14f8d40e68d",
+            "4e1752990c0cf646",
+            "7a188b4e0bbfc884",
+            "8e758365eae9fa69",
+            "f4b10eefccfc232d"
+        ],
+        "x": 14,
+        "y": 479,
+        "w": 572,
+        "h": 242
+    },
+    {
+        "id": "b3c603f03c7f6031",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "c156e7d6fc9bf3db",
+            "73a89c26ba594a60"
+        ],
+        "x": 474,
+        "y": 99,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "e453b55ec40fb7b2",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "629c6fc4b6c40290",
+            "b1bd0f9186ecf989",
+            "3542db0b32ccf649"
+        ],
+        "x": 514,
+        "y": 219,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "d27bebc9171e33c8",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b7487f1f6d7ea3cb",
+            "a8209b05be04cfc3",
+            "898d168954bf8b06"
+        ],
+        "x": 14,
+        "y": 319,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "769052866dad3dab",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "898162d748f731fa",
+            "cd73dd4b3a0871b2",
+            "2d106c437a66f0bc",
+            "af18689b1de05389",
+            "ca5956b6eed8e18e"
+        ],
+        "x": 34,
+        "y": 859,
+        "w": 812,
+        "h": 122
+    },
+    {
+        "id": "d5dd31ac192660a8",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3dc932f29d68b68c",
+            "3b26af488516745b",
+            "8bb802f53d1b1d40"
+        ],
+        "x": 34,
+        "y": 1059,
+        "w": 692,
+        "h": 82
+    },
+    {
+        "id": "5355d308b44b018a",
+        "type": "group",
+        "z": "f6f2187d.f17ca8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "01d37f9a3c720a6e",
+            "1b5148227aca936a",
+            "293939e00d8e96e2",
+            "b46d0d7e8b7f4c92",
+            "38a18c1eadbbef4f"
+        ],
+        "x": 34,
+        "y": 1239,
+        "w": 892,
+        "h": 142
+    },
+    {
+        "id": "805740246cbc99ea",
+        "type": "ui_tab",
+        "name": "FeedMyPlants_Stats",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d8e94097bb0e8782",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6e245c81f317ae48",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "805740246cbc99ea",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d82a4b6faba0294b",
+        "type": "ui_group",
+        "name": "Stats",
+        "tab": "805740246cbc99ea",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f6399bacb9bcb7eb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9b67a22348aaab66",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "10.8.8.217",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6979e697206438dd",
+        "type": "ui_group",
+        "name": "Scheduler",
+        "tab": "805740246cbc99ea",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2936b813.6cde68",
+        "type": "ui_tab",
+        "name": "Scheduler Demo",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3091f741641375de",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "UI Buttons",
+        "info": "",
+        "x": 80,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "cb315992bd18be8c",
+        "type": "ui_button",
+        "z": "f6f2187d.f17ca8",
+        "g": "62abc6cc444574ce",
+        "name": "",
+        "group": "6e245c81f317ae48",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Do Measure",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "num",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "b60962e1d678489c"
+            ]
+        ]
+    },
+    {
+        "id": "c7b37d4e87f1ae64",
+        "type": "ui_gauge",
+        "z": "f6f2187d.f17ca8",
+        "g": "84e9646b68c68be0",
+        "name": "",
+        "group": "d82a4b6faba0294b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Temperature",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#006eb3",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "35",
+        "diff": false,
+        "className": "",
+        "x": 490,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b66908be0b2a0a53",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "g": "69d78f0595232264",
+        "name": "",
+        "topic": "feed_my_plant/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b67a22348aaab66",
+        "x": 320,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b60962e1d678489c",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "g": "62abc6cc444574ce",
+        "name": "",
+        "topic": "feed_my_plant/new_measure",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b67a22348aaab66",
+        "x": 340,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "50a5a14f8d40e68d",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "g": "84e9646b68c68be0",
+        "name": "",
+        "topic": "feed_my_plant/bme_readings/temp",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b67a22348aaab66",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "c7b37d4e87f1ae64"
+            ]
+        ]
+    },
+    {
+        "id": "4e1752990c0cf646",
+        "type": "ui_gauge",
+        "z": "f6f2187d.f17ca8",
+        "g": "84e9646b68c68be0",
+        "name": "",
+        "group": "d82a4b6faba0294b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 480,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7a188b4e0bbfc884",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "g": "84e9646b68c68be0",
+        "name": "",
+        "topic": "feed_my_plant/bme_readings/hum",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b67a22348aaab66",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 600,
+        "wires": [
+            [
+                "4e1752990c0cf646"
+            ]
+        ]
+    },
+    {
+        "id": "8e758365eae9fa69",
+        "type": "ui_gauge",
+        "z": "f6f2187d.f17ca8",
+        "g": "84e9646b68c68be0",
+        "name": "",
+        "group": "d82a4b6faba0294b",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "1200",
+        "seg2": "1500",
+        "diff": false,
+        "className": "",
+        "x": 480,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "f4b10eefccfc232d",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "g": "84e9646b68c68be0",
+        "name": "",
+        "topic": "feed_my_plant/bme_readings/press",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b67a22348aaab66",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 680,
+        "wires": [
+            [
+                "8e758365eae9fa69"
+            ]
+        ]
+    },
+    {
+        "id": "c156e7d6fc9bf3db",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "g": "b3c603f03c7f6031",
+        "name": "",
+        "topic": "feed_my_plant/mqtt_status",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "9b67a22348aaab66",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 610,
+        "y": 140,
+        "wires": [
+            [
+                "73a89c26ba594a60"
+            ]
+        ]
+    },
+    {
+        "id": "73a89c26ba594a60",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "g": "b3c603f03c7f6031",
+        "group": "6e245c81f317ae48",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 860,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1b2e66e261cecc68",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "UI Stats",
+        "info": "",
+        "x": 70,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "55190430a0261633",
+        "type": "ui_switch",
+        "z": "f6f2187d.f17ca8",
+        "g": "69d78f0595232264",
+        "name": "",
+        "label": "Water",
+        "tooltip": "",
+        "group": "6e245c81f317ae48",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "b66908be0b2a0a53"
+            ]
+        ]
+    },
+    {
+        "id": "20a2cdaa734dd232",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "Not working as permanent",
+        "info": "",
+        "x": 130,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "898162d748f731fa",
+        "type": "file",
+        "z": "f6f2187d.f17ca8",
+        "g": "769052866dad3dab",
+        "name": "WriteFile",
+        "filename": "/Users/joaoteixeira/Desktop/SchedulerFile/SchedulerFile.json",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 500,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd73dd4b3a0871b2",
+        "type": "file in",
+        "z": "f6f2187d.f17ca8",
+        "g": "769052866dad3dab",
+        "name": "ReadFile",
+        "filename": "/Users/joaoteixeira/Desktop/SchedulerFile/SchedulerFile.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 120,
+        "y": 920,
+        "wires": [
+            [
+                "2d106c437a66f0bc"
+            ]
+        ]
+    },
+    {
+        "id": "2d106c437a66f0bc",
+        "type": "ui_time_scheduler",
+        "z": "f6f2187d.f17ca8",
+        "g": "769052866dad3dab",
+        "group": "6979e697206438dd",
+        "name": "",
+        "startDay": "0",
+        "refresh": "10",
+        "devices": [
+            "Sprinkler 1",
+            "Sprinkler 2"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [],
+        "sendTopic": false,
+        "lat": "40.198486",
+        "lon": "-8.513490",
+        "customContextStore": "",
+        "outputs": 3,
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "x": 290,
+        "y": 920,
+        "wires": [
+            [
+                "898162d748f731fa"
+            ],
+            [
+                "ca5956b6eed8e18e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "af18689b1de05389",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "g": "769052866dad3dab",
+        "name": "",
+        "topic": "feed_my_plant/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b67a22348aaab66",
+        "x": 720,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "629c6fc4b6c40290",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "g": "e453b55ec40fb7b2",
+        "name": "",
+        "topic": "feed_my_plant/rain",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b67a22348aaab66",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 630,
+        "y": 260,
+        "wires": [
+            [
+                "b1bd0f9186ecf989"
+            ]
+        ]
+    },
+    {
+        "id": "b1bd0f9186ecf989",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "g": "e453b55ec40fb7b2",
+        "name": "If Rain",
+        "func": "let rain = msg.payload;\n\nif (rain === 1) {\n    msg.payload = 'It\\'s raining!'\n} else {\n    msg.payload = 'It\\'s not raining!'\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "3542db0b32ccf649"
+            ]
+        ]
+    },
+    {
+        "id": "3542db0b32ccf649",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "g": "e453b55ec40fb7b2",
+        "group": "6e245c81f317ae48",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1030,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ca5956b6eed8e18e",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "g": "769052866dad3dab",
+        "name": "If Timer",
+        "func": "let timer = msg.payload;\n\nlet previousTimer = context.get('previousTimer');\n\n// Se o estado anterior é undefined, inicialize-o como null\nif (previousTimer === undefined) {\n    previousTimer = null;\n}\n\nif (timer !== previousTimer) {\n\n    context.set('previousTimer', timer);\n\n    if (timer === true) {\n        msg.payload = '1';\n    } else {\n        msg.payload = '0';\n    }\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 940,
+        "wires": [
+            [
+                "af18689b1de05389"
+            ]
+        ]
+    },
+    {
+        "id": "b7487f1f6d7ea3cb",
+        "type": "timer-node",
+        "z": "f6f2187d.f17ca8",
+        "g": "d27bebc9171e33c8",
+        "name": "Timer",
+        "topic": "",
+        "timer": "5",
+        "payloadOn": "1",
+        "payloadOnType": "num",
+        "payloadOff": "0",
+        "payloadOffType": "num",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "a8209b05be04cfc3"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a8209b05be04cfc3",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "g": "d27bebc9171e33c8",
+        "name": "",
+        "topic": "feed_my_plant/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b67a22348aaab66",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "898d168954bf8b06",
+        "type": "ui_switch",
+        "z": "f6f2187d.f17ca8",
+        "g": "d27bebc9171e33c8",
+        "name": "",
+        "label": "5 Min Timer",
+        "tooltip": "",
+        "group": "6979e697206438dd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "#00FF00",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "#FFFFFF",
+        "animate": false,
+        "className": "",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "b7487f1f6d7ea3cb"
+            ]
+        ]
+    },
+    {
+        "id": "6e026e172b0f553c",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "UI Scheduler",
+        "info": "",
+        "x": 90,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3dc932f29d68b68c",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "g": "d5dd31ac192660a8",
+        "name": "",
+        "topic": "feed_my_plant/rain",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "9b67a22348aaab66",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1100,
+        "wires": [
+            [
+                "3b26af488516745b"
+            ]
+        ]
+    },
+    {
+        "id": "3b26af488516745b",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "g": "d5dd31ac192660a8",
+        "name": "If Rain",
+        "func": "let rain = msg.payload;\n\nif (rain === 1) {\n    msg.payload = '0'\n} else {\n    msg.payload = '1'\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 1100,
+        "wires": [
+            [
+                "8bb802f53d1b1d40"
+            ]
+        ]
+    },
+    {
+        "id": "8bb802f53d1b1d40",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "g": "d5dd31ac192660a8",
+        "name": "",
+        "topic": "feed_my_plant/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b67a22348aaab66",
+        "x": 600,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "6379cabbc3beb9b4",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "Rain Sensor",
+        "info": "",
+        "x": 110,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "01d37f9a3c720a6e",
+        "type": "random",
+        "z": "f6f2187d.f17ca8",
+        "g": "5355d308b44b018a",
+        "name": "Soil Hum Random",
+        "low": "30",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 330,
+        "y": 1280,
+        "wires": [
+            [
+                "1b5148227aca936a",
+                "38a18c1eadbbef4f"
+            ]
+        ]
+    },
+    {
+        "id": "40af76f4f1c04b4c",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "Simulates the value of a soil humidity sensor",
+        "info": "",
+        "x": 190,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "1b5148227aca936a",
+        "type": "function",
+        "z": "f6f2187d.f17ca8",
+        "g": "5355d308b44b018a",
+        "name": "If Soil Hum",
+        "func": "let soilhum = msg.payload;\n\nif(soilhum < 50 ){\n    msg.payload = '1';\n}\nelse{\n    msg.payload = '0';\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1280,
+        "wires": [
+            [
+                "293939e00d8e96e2"
+            ]
+        ]
+    },
+    {
+        "id": "293939e00d8e96e2",
+        "type": "mqtt out",
+        "z": "f6f2187d.f17ca8",
+        "g": "5355d308b44b018a",
+        "name": "",
+        "topic": "feed_my_plant/relay",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9b67a22348aaab66",
+        "x": 800,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "b46d0d7e8b7f4c92",
+        "type": "ui_button",
+        "z": "f6f2187d.f17ca8",
+        "g": "5355d308b44b018a",
+        "name": "",
+        "group": "6e245c81f317ae48",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Soil Hum",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 1280,
+        "wires": [
+            [
+                "01d37f9a3c720a6e"
+            ]
+        ]
+    },
+    {
+        "id": "38a18c1eadbbef4f",
+        "type": "ui_text",
+        "z": "f6f2187d.f17ca8",
+        "g": "5355d308b44b018a",
+        "group": "6e245c81f317ae48",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 330,
+        "y": 1340,
+        "wires": []
+    }
+]
