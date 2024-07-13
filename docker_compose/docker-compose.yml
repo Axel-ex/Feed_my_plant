@@ -1,17 +1,4 @@
 services:
-  telegraf:
-    image: telegraf
-    container_name: telegraf
-    restart: always
-    volumes:
-    - ./data/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
-    depends_on:
-      - influxdb
-    links:
-      - influxdb
-    ports:
-    - '8125:8125'
-
   influxdb:
     image: influxdb
     container_name: influxdb
@@ -25,22 +12,36 @@ services:
     volumes:
       - influxdb_data:/var/lib/influxdb
 
+  telegraf:
+    image: telegraf
+    container_name: telegraf
+    restart: always
+    env_file: .env
+    volumes:
+    - ./data/telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    depends_on:
+      - influxdb
+    links:
+      - influxdb
+    ports:
+    - '8125:8125'
+
   grafana:
     image: grafana/grafana
     container_name: grafana-server
     restart: always
     depends_on:
       - influxdb
-    environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin
-      - GF_INSTALL_PLUGINS=
+    env_file: .env
     links:
       - influxdb
     ports:
       - '3000:3000'
     volumes:
       - grafana_data:/var/lib/grafana
+      - ./data/grafana/dashboard.yaml:/etc/grafana/provisioning/dashboards/main.yaml
+      - ./data/grafana/datasources:/etc/grafana/provisioning/datasources
+      - ./data/grafana/dashboards:/var/lib/grafana/dashboards
 
   node-red:
     image: nodered/node-red:latest
@@ -50,8 +51,6 @@ services:
       - ./data/node-red:/data
     ports:
       - '1880:1880'
-    environment:
-      - NODE_RED_ENABLE_PROJECTS=true
 
   mosquitto:
     image: eclipse-mosquitto:latest

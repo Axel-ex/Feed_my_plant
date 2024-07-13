@@ -379,7 +379,7 @@
         "id": "9b67a22348aaab66",
         "type": "mqtt-broker",
         "name": "Mosquitto",
-        "broker": "10.8.8.217",
+        "broker": "192.168.1.71",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
