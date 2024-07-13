@@ -61,11 +61,17 @@ Before setting up the software, ensure you have the following installed on your 
 2. **Modify credentials**:
 
     - Make sure to modify environment variable in the docker-compose.yml.
+	- Modify wifi credential in ...
 
 3. **Start the Docker Containers**:
     ```sh
     docker-compose up -d
-    ```
+
+4. Upload the code to the board
+```shell
+	pio run --target upload && pio device monitor
+```
+
 ## Usage
 
 Once the Docker containers are up and running:

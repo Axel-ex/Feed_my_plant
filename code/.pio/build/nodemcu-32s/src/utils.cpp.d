@@ -195,6 +195,7 @@
  /Users/Axel/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiUdp.h \
  /Users/Axel/.platformio/packages/framework-arduinoespressif32/cores/esp32/Udp.h \
  /Users/Axel/.platformio/packages/framework-arduinoespressif32/cores/esp32/cbuf.h \
+ /Users/Axel/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src/WiFiType.h \
  /Users/Axel/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal-adc.h \
  /Users/Axel/.platformio/packages/framework-arduinoespressif32/cores/esp32/esp32-hal.h \
  .pio/libdeps/nodemcu-32s/BME680/src/Zanshin_BME680.h \

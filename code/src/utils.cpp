@@ -1,16 +1,14 @@
 #include "../include/utils.hpp"
 #include "PubSubClient.h"
 #include "WiFi.h"
+#include "WiFiType.h"
 #include "esp32-hal-adc.h"
 #include "esp32-hal.h"
 #include "Zanshin_BME680.h"
 #include <cstdio>
 
-char* ssid = "CSW-PROJ";
-const char* pswd = "bAv&*bLelQ7C";
-//
-// char* ssid = "Redmi10";
-// const char* pswd = "chocolate123";
+char* ssid = "MEO-BD8310";
+const char* pswd = "9f24731014";
 
 WiFiClient espclient;
 PubSubClient client(espclient);
@@ -117,6 +115,9 @@ void reconnect()
 {
     static int connecting_tries;
 
+	if (WiFi.status() != WL_CONNECTED)
+		init_wifi();
+
     while (!client.connected())
     {
         Serial.print("Attempting MQTT connection...");
@@ -133,11 +134,7 @@ void reconnect()
         {
             connecting_tries++;
             if (connecting_tries >= 5)
-            {
                 client.publish("feed_my_plant/mqtt_status", "Not connected");
-                delay(5000);
-                continue;
-            }
             Serial.print("failed, rc=");
             Serial.print(client.state());
             Serial.println(" try again in 5 seconds");
