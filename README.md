@@ -1,6 +1,6 @@
 ![Alt text](cover.png)
 
-**Feed My Plant** is a smart watering system that ensures your plants stay hydrated at all times based on environmental conditions without needing your intervention. This project is a collaborative effort by [Your Team/Organization] in partnership with Critical Software.
+**Feed My Plant** is a smart watering system that ensures your little plants stay hydrated at all times based on environmental conditions without needing your intervention! This project is the result of a collaborative effort and was develop during the innovation week 2024 organised by Critical software.
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -49,6 +49,8 @@ To set up the **Feed My Plant** system, you will need the following hardware:
 Before setting up the software, ensure you have the following installed on your machine:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+- [PlateformIO](https://docs.platformio.org/en/latest/core/installation/index.html)
+- 
 
 ### Installation
 
@@ -57,19 +59,27 @@ Before setting up the software, ensure you have the following installed on your 
     git clone https://github.com/yourusername/feed-my-plant.git
     cd feed-my-plant
     ```
-
-2. **Modify credentials**:
-
-    - Make sure to modify environment variable in the docker-compose.yml.
-	- Modify wifi credential in ...
-
+2. Upload the code to the board
+```shell
+	cd code
+	pio run --target upload && pio device monitor
+```
 3. **Start the Docker Containers**:
     ```sh
     docker-compose up -d
 
-4. Upload the code to the board
+4. **Set up your database**
+
+	- Go to your database page (`http://localhost:8086`)
+	- Create a profile and copy your API token
+
+4. **Modify credentials**:
+
+    - Make sure to modify environment variable in the .env file with the value you just entered when creating your influxdb user.
+
+5. **Restart your services**
 ```shell
-	pio run --target upload && pio device monitor
+	docker-compose restart
 ```
 
 ## Usage
@@ -84,7 +94,6 @@ Once the Docker containers are up and running:
 ### Telegraf
 
 - **Image**: `telegraf`
-- **Container Name**: `telegraf`
 - **Ports**: `8125`
 - **Configuration**:
     ```yaml
@@ -95,15 +104,7 @@ Once the Docker containers are up and running:
 ### InfluxDB
 
 - **Image**: `influxdb`
-- **Container Name**: `influxdb`
 - **Ports**: `8086`
-- **Environment Variables**:
-    ```yaml
-    environment:
-      - INFLUXDB_DB=influx
-      - INFLUXDB_ADMIN_USER=admin
-      - INFLUXDB_ADMIN_PASSWORD=admin
-    ```
 - **Volumes**:
     ```yaml
     volumes:
@@ -113,14 +114,7 @@ Once the Docker containers are up and running:
 ### Grafana
 
 - **Image**: `grafana/grafana`
-- **Container Name**: `grafana-server`
 - **Ports**: `3000`
-- **Environment Variables**:
-    ```yaml
-    environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin
-    ```
 - **Volumes**:
     ```yaml
     volumes:
@@ -132,11 +126,6 @@ Once the Docker containers are up and running:
 - **Image**: `nodered/node-red:latest`
 - **Container Name**: `node-red`
 - **Ports**: `1880`
-- **Environment Variables**:
-    ```yaml
-    environment:
-      - NODE_RED_ENABLE_PROJECTS=true
-    ```
 - **Volumes**:
     ```yaml
     volumes:

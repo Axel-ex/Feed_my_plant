@@ -16,4 +16,3 @@ datasources:
       defaultBucket: ${INFLUXDB_BUCKET}
     database: influx
     isDefault: true
-
