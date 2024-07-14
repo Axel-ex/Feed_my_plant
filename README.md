@@ -58,16 +58,16 @@ Before setting up the software, ensure you have the following installed on your 
     git clone https://github.com/yourusername/feed-my-plant.git
     cd feed-my-plant
     ```
-2. Upload the code to the board
-```shell
+2. change the Wifi credentials in .cpp files and upload the code to the board
+	```shell
 	cd code
 	pio run --target upload && pio device monitor
-```
+	```
 3. **Start the Docker Containers**:
     ```sh
 	cd docker_compose
     docker-compose up -d
-
+	```
 4. **Set up your database**
 
 	- Go to your database page (`http://localhost:8086`)
@@ -80,9 +80,9 @@ Before setting up the software, ensure you have the following installed on your 
 <br>
 
 5. **Restart your services**
-```shell
+	```shell
 	docker-compose restart
-```
+	```
 
 ## Usage
 
