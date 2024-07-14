@@ -152,7 +152,3 @@ Once the Docker containers are up and running:
       - ./data/mosquitto/data:/mosquitto/data
       - ./data/mosquitto/log:/mosquitto/log
     ```
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
