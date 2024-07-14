@@ -55,7 +55,7 @@ Before setting up the software, ensure you have the following installed on your 
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/feed-my-plant.git
+    git clone https://github.com/Axel-ex/Feed_my_plant.git
     cd feed-my-plant
     ```
 2. change the Wifi credentials in .cpp files and upload the code to the board
