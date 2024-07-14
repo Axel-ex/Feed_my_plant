@@ -93,8 +93,8 @@ Once the Docker containers are up and running:
 3. Ensure **Telegraf**, **InfluxDB**, and **Mosquitto** are running and properly configured to collect and route data from your sensors.
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="grafana_demo.png" alt="Alt text" style="width: 70%;">
-    <img src="node_red_ui_demo.png" alt="Alt text" style="width: 45%;">
+    <img src="grafana_demo.png" alt="Alt text" style="width: 100%;">
+    <img src="node_red_ui_demo.png" alt="Alt text" style="width: 100%;">
 </div>
 
 ## Docker Compose Services
