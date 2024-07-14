@@ -7,8 +7,8 @@
 #include "Zanshin_BME680.h"
 #include <cstdio>
 
-char* ssid = "MEO-BD8310";
-const char* pswd = "9f24731014";
+char* ssid = "WIFI_SSID";
+const char* pswd = "PASSWORD";
 
 WiFiClient espclient;
 PubSubClient client(espclient);
