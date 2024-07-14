@@ -50,7 +50,6 @@ Before setting up the software, ensure you have the following installed on your 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [PlateformIO](https://docs.platformio.org/en/latest/core/installation/index.html)
-- 
 
 ### Installation
 
@@ -66,16 +65,19 @@ Before setting up the software, ensure you have the following installed on your 
 ```
 3. **Start the Docker Containers**:
     ```sh
+	cd docker_compose
     docker-compose up -d
 
 4. **Set up your database**
 
 	- Go to your database page (`http://localhost:8086`)
-	- Create a profile and copy your API token
+	- Create a profile and copy your API token  
+<br>
 
 4. **Modify credentials**:
 
-    - Make sure to modify environment variable in the .env file with the value you just entered when creating your influxdb user.
+    - Make sure to modify environment variable in the .env file with the value you just entered when creating your influxdb user.  
+<br>
 
 5. **Restart your services**
 ```shell
@@ -84,10 +86,16 @@ Before setting up the software, ensure you have the following installed on your 
 
 ## Usage
 
+
 Once the Docker containers are up and running:
 1. Access **Grafana** at `http://localhost:3000` to visualize sensor data.
-2. Access **Node-RED** at `http://localhost:1880` to manage and customize the automation workflows. Access the **Node-RED** UI at `http://localhost:1880/ui`.
+2. Access **Node-RED** at `http://localhost:1880` to manage and customize the automation workflows. Access the **Node-RED** UI at `http://localhost:1880/ui` to interact with your microcontroller.
 3. Ensure **Telegraf**, **InfluxDB**, and **Mosquitto** are running and properly configured to collect and route data from your sensors.
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="grafana_demo.png" alt="Alt text" style="width: 70%;">
+    <img src="node_red_ui_demo.png" alt="Alt text" style="width: 45%;">
+</div>
 
 ## Docker Compose Services
 
