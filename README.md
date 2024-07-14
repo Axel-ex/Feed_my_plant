@@ -71,7 +71,8 @@ Before setting up the software, ensure you have the following installed on your 
 4. **Set up your database**
 
 	- Go to your database page (`http://localhost:8086`)
-	- Create a profile and copy your API token
+	- Create a profile and copy your API token  
+<br>
 
 4. **Modify credentials**:
 
