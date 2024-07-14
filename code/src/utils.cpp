@@ -2,9 +2,9 @@
 #include "PubSubClient.h"
 #include "WiFi.h"
 #include "WiFiType.h"
+#include "Zanshin_BME680.h"
 #include "esp32-hal-adc.h"
 #include "esp32-hal.h"
-#include "Zanshin_BME680.h"
 #include <cstdio>
 
 char* ssid = "WIFI_SSID";
@@ -14,12 +14,7 @@ WiFiClient espclient;
 PubSubClient client(espclient);
 
 const int stableValue = 3155;
-const int tolerance = 50;
 const unsigned long requiredStableTime = 10000;
-unsigned long lastStableTime = 0;
-bool isStable = false;
-bool is_raining = false;
-bool last_is_raining = false;
 extern BME680_Class BME680;
 
 void print_debug(int32_t temp, int32_t humidity, int32_t pressure)
@@ -73,7 +68,8 @@ void callback(char* topic, byte* payload, unsigned int length)
         static int32_t temp, humidity, pressure, gas;
 
         BME680.getSensorData(temp, humidity, pressure, gas);
-        client.publish("feed_my_plant/bme_readings/temp", String(temp / 100).c_str());
+        client.publish("feed_my_plant/bme_readings/temp",
+                       String(temp / 100).c_str());
         client.publish("feed_my_plant/bme_readings/hum",
                        String(humidity / 1000).c_str());
         client.publish("feed_my_plant/bme_readings/press",
@@ -83,18 +79,19 @@ void callback(char* topic, byte* payload, unsigned int length)
 
 void check_rain_sensor(void)
 {
+    static unsigned long lastStableTime = 0;
+    static bool isStable = false;
+    static bool is_raining = false;
+    static bool last_is_raining = false;
     int reading = analogReadMilliVolts(RAIN_SENSOR_PIN);
 
-    if (abs(reading - stableValue) <= tolerance)
+    if (!isStable)
     {
-        if (!isStable)
-        {
-            lastStableTime = millis(); // Reset the stable timer
-            isStable = true;
-        }
-        else if (millis() - lastStableTime >= requiredStableTime)
-            is_raining = true;
+        lastStableTime = millis(); // Reset the stable timer
+        isStable = true;
     }
+    else if (millis() - lastStableTime >= requiredStableTime)
+        is_raining = true;
     else
     {
         is_raining = false;
@@ -115,8 +112,8 @@ void reconnect()
 {
     static int connecting_tries;
 
-	if (WiFi.status() != WL_CONNECTED)
-		init_wifi();
+    if (WiFi.status() != WL_CONNECTED)
+        init_wifi();
 
     while (!client.connected())
     {
