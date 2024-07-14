@@ -9,7 +9,7 @@
 
 #define MEASUREMENT_DELAY 30000
 
-const char* mqtt_url = "192.168.1.71";
+const char* mqtt_url = "YOUR_IP";
 unsigned long last_messag = 0;
 
 BME680_Class BME680;
