@@ -46,7 +46,7 @@ To set up the **Feed My Plant** system, you will need the following hardware:
     <img src="Hardware_Setup.png" alt="Alt text" style="width: 100%;">
 </div>
 
-This image shows the setup without the rain detector, here you can see the ESP32 that controlls the system, the BME280 Sensor, used for measuring temperature, humidity, and atmospheric pressure that it's connected to the ESP32 via I2C communication. The relay is used to switch the valve on and off. The actual valve that controls water flow. It is powered by an external power supply.
+Here above the setup without the rain detector. The BME280 sensor is connected via I2C (SDA 21, SCL 22). The relay is connected to GPIO26, and the rain sensor (not shown) uses GPIO33. The valve and rain sensor are powered by an external 12V power supply.
 
 ## Software Setup
 
