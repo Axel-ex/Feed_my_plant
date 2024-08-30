@@ -110,8 +110,6 @@ void check_rain_sensor(void)
 
 void reconnect()
 {
-    static int connecting_tries;
-
     if (WiFi.status() != WL_CONNECTED)
         init_wifi();
 
@@ -129,9 +127,6 @@ void reconnect()
         }
         else
         {
-            connecting_tries++;
-            if (connecting_tries >= 5)
-                client.publish("feed_my_plant/mqtt_status", "Not connected");
             Serial.print("failed, rc=");
             Serial.print(client.state());
             Serial.println(" try again in 5 seconds");
